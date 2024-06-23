@@ -1,0 +1,35 @@
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+    .slider{
+        display: none;
+    }
+    .navbar__items-container-pc{
+        display: none;
+    }
+
+    .navbar__auth-form{
+        display: none;
+    }
+    .navbar__items-mobile {
+        display: flex;
+    }
+    .navbar-hamburger__btn {
+        display: block;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}
+
+
+

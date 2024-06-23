@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,39 +11,62 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="navbar__logo">
-                    <img src="img/logo-without-bg.png" alt="" class="navbar__logo-image">
-                </div>
-                <ul class="navbar__items-mobile">
-                    <li class="navbar__item-mobile"><a class="navbar__item-link" href="">صفحه اصلی</a></li>
-                    <li class="navbar__item-mobile"><a class="navbar__item-link" href="">فروشگاه</a></li>
-                    <li class="navbar__item-mobile"><a class="navbar__item-link" href="">ثبت نام</a></li>
-                    <li class="navbar__item-mobile"><a class="navbar__item-link" href="">ورود</a></li>
-                </ul>
-                <div class="navbar__items-container-pc">
-                    <ul class="navbar__items">
-                        <li class="navbar__item"><a href="" class="navbar__item-link">صفحه اصلی</a></li>
-                        <li class="navbar__item"><a href="" class="navbar__item-link">فروشگاه</a></li>
-                    </ul>
-                    <div class="navbar__auth-form">
-                        <a class="navbar__auth-link navbar__auth-link--outline" href="">ورود</a>
-                        <a class="navbar__auth-link navbar__auth-link--active" href="">ثبت نام</a>
-                        <form action="" method="get">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__container">
+                    <div class="navbar__logo">
+                        <img src="img/logo-without-bg.png" alt="" class="navbar__logo-image">
                     </div>
+                    <ul class="navbar__items-mobile">
+                        <li class="navbar__item-mobile"><a class="navbar__item-mobile-link" href="">صفحه اصلی</a></li>
+                        <li class="navbar__item-mobile"><a class="navbar__item-mobile-link" href="">فروشگاه</a></li>
+                        <li class="navbar__item-mobile"><a class="navbar__item-mobile-link" href="">ثبت نام</a></li>
+                        <li class="navbar__item-mobile"><a class="navbar__item-mobile-link" href="">ورود</a></li>
+                    </ul>
 
+                    <div class="navbar__items-container-pc">
+                        <ul class="navbar__items">
+                            <li class="navbar__item"><a href="" class="navbar__item-link">صفحه اصلی</a></li>
+                            <li class="navbar__item"><a href="" class="navbar__item-link">فروشگاه</a></li>
+                        </ul>
+                        <div class="navbar__auth-form">
+                            <a class="navbar__auth-link navbar__auth-link--outline" href="">ورود</a>
+                            <a class="navbar__auth-link navbar__auth-link--active" href="">ثبت نام</a>
+                            <form action="" method="get" class="navbar__search-form">
+                                <input type="text" name="" placeholder="جستوجو" class="navbar__search-text">
+                                <button type="button" class="navbar__search-btn"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <div class="navbar-hamburger">
+                        <input type="checkbox" name="" class="navbar-hamburger__radio-btn" id="navbar-hamburger__radio-btn"
+                            hidden>
+                        <label for="navbar-hamburger__radio-btn">
+                            <div class="navbar-hamburger__btn">
+                                <div class="navbar-hamburger__line"></div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
-    
-            </nav>
+            </div>
+        </nav>
+        <div class="slider">
+            <img src="img/slider_images/4.jpg" alt="" class="slider__image">
+            <button class="slider__previous-btn"><i class="fa fa-angle-double-left"></i></button>
+            <button class="slider__next-btn"><i class="fa fa-angle-double-right"></i></button>
         </div>
-
     </header>
+
+    <script src="scripts/app.js"></script>
 </body>
+
 </html>
